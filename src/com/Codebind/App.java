@@ -34,134 +34,76 @@ public class App {
     private boolean isActionAssigned;
     private String actionAssigned;
 
+    private void numberPress(String num){
+        if(isActionAssigned){
+            textbox.setText(num);
+            isActionAssigned = false;
+        } else if(textbox.getText().equals("0")){
+            textbox.setText(num);
+        } else {
+            textbox.setText(textbox.getText() + num);
+        }
+    }
+
     public App() {
         a1Button.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                if(isActionAssigned){
-                    textbox.setText("1");
-                    isActionAssigned = false;
-                } else if(textbox.getText().equals("0")){
-                    textbox.setText("1");
-                } else {
-                    textbox.setText(textbox.getText() + "1");
-                }
+                numberPress("1");
             }
         });
         a2Button.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                if(isActionAssigned){
-                    textbox.setText("2");
-                    isActionAssigned = false;
-                } else if(textbox.getText().equals("0")){
-                    textbox.setText("2");
-                } else {
-                    textbox.setText(textbox.getText() + "2");
-                }
+                numberPress("2");
             }
         });
         a3Button.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                if(isActionAssigned){
-                    textbox.setText("3");
-                    isActionAssigned = false;
-                }else if(textbox.getText().equals("0")){
-                    textbox.setText("3");
-                } else {
-                    textbox.setText(textbox.getText() + "3");
-                }
+                numberPress("3");
             }
         });
         a4Button.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                if(isActionAssigned){
-                    textbox.setText("4");
-                    isActionAssigned = false;
-                } else if(textbox.getText().equals("0")){
-                    textbox.setText("4");
-                } else {
-                    textbox.setText(textbox.getText() + "4");
-                }
+                numberPress("4");
             }
         });
         a5Button.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                if(isActionAssigned){
-                    textbox.setText("5");
-                    isActionAssigned = false;
-                } else if(textbox.getText().equals("0")){
-                    textbox.setText("5");
-                } else {
-                    textbox.setText(textbox.getText() + "5");
-                }
+                numberPress("5");
             }
         });
         a6Button.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                if(isActionAssigned){
-                    textbox.setText("6");
-                    isActionAssigned = false;
-                } else if(textbox.getText().equals("0")){
-                    textbox.setText("6");
-                } else {
-                    textbox.setText(textbox.getText() + "6");
-                }
+                numberPress("6");
             }
         });
         a7Button.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                if(isActionAssigned){
-                    textbox.setText("7");
-                    isActionAssigned = false;
-                } else if(textbox.getText().equals("0")){
-                    textbox.setText("7");
-                } else {
-                    textbox.setText(textbox.getText() + "7");
-                }
+                numberPress("7");
             }
         });
         a8Button.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                if(isActionAssigned){
-                    textbox.setText("8");
-                    isActionAssigned = false;
-                } else if(textbox.getText().equals("0")){
-                    textbox.setText("8");
-                } else {
-                    textbox.setText(textbox.getText() + "8");
-                }
+                numberPress("8");
             }
         });
         a9Button.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                if(isActionAssigned){
-                    textbox.setText("9");
-                    isActionAssigned = false;
-                } else if(textbox.getText().equals("0")){
-                    textbox.setText("9");
-                } else {
-                    textbox.setText(textbox.getText() + "9");
-                }
+                numberPress("9");
             }
         });
         a0Button.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                if(isActionAssigned){
-                    textbox.setText("0");
-                    isActionAssigned = false;
-                } else if(textbox.getText().equals("0")){
-                } else {
-                    textbox.setText(textbox.getText() + "0");
-                }
+                numberPress("0");
             }
         });
         button12.addActionListener(new ActionListener() {
